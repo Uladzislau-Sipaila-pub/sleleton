@@ -1,0 +1,4 @@
+<button mat-button [routerLink]="['/objects']">Back</button>
+<div *ngIf="nearEarthObject">
+    <app-object-card [nearEarthObject]="nearEarthObject"></app-object-card>
+</div>

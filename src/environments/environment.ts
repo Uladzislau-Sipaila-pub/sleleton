@@ -3,7 +3,10 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  basePath: 'https://api.nasa.gov/neo/rest/',
+  apiKey: 'Z9qW5xfOBGjC5DDhwHjl522dBviBi2SnPqGDt61M',
+  securityToken: ''
 };
 
 /*

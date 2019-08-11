@@ -1,0 +1,22 @@
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>{{nearEarthObject.name}}</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <div>
+        <h3>Absolute Magnitude, H</h3>
+        <p>{{nearEarthObject.absoluteMagnitudeH}}</p>
+    </div>
+    <div>
+        <h3>Estimated diameter, meters</h3>
+        <p>Min: {{nearEarthObject.estimatedDiameter.estimatedDiameterMin}}</p>
+        <p>Max: {{nearEarthObject.estimatedDiameter.estimatedDiameterMax}}</p>
+    </div>
+    <div [hidden]="!nearEarthObject.isPotentiallyHazardousAsteroid">
+        <h3>Potentially Hazardous</h3>
+    </div>
+    <div [hidden]="!nearEarthObject.isSentryObject">
+        <h3>Sentry Object</h3>
+    </div>
+  </mat-card-content>
+</mat-card>

@@ -1,5 +1,10 @@
 {
   "extends": "./tsconfig.json",
+  "paths": {
+    "@api/*": ["app/api/*"],
+    "@shared/*": ["app/shared/*"],
+    "@environments/*": ["environments/*"]
+  },
   "compilerOptions": {
     "outDir": "./out-tsc/app",
     "types": []
